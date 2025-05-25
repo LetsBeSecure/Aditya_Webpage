@@ -1,0 +1,346 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8fafc;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #1a73e8;
+    /* Google Blue */
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem 4rem;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    letter-spacing: 1.5px;
+}
+
+header p {
+    font-size: 1.15rem;
+    font-weight: 500;
+    opacity: 0.9;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+/* Profile Photo */
+.profile-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1.5rem;
+    box-shadow: 0 8px 15px rgba(26, 115, 232, 0.3);
+    border: 4px solid white;
+    background: #fff;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Bio */
+#bio {
+    max-width: 760px;
+    background: white;
+    margin: -4rem auto 3rem;
+    padding: 2.8rem 2.4rem 3rem;
+    border-radius: 14px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+    color: #333;
+}
+
+#bio h2 {
+    font-size: 2rem;
+    color: #1a73e8;
+    margin-bottom: 1.2rem;
+    border-bottom: 3px solid #1a73e8;
+    padding-bottom: 0.3rem;
+}
+
+#bio p {
+    font-size: 1.1rem;
+    line-height: 1.65;
+}
+
+#bio p strong {
+    color: #111;
+    font-weight: 700;
+}
+
+#bio a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+#bio a:hover,
+#bio a:focus {
+    color: #0049b7;
+    text-decoration: underline;
+}
+
+/* Sections (Projects, Connect, Degrees) */
+section {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+#projects,
+#connect,
+#degrees {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+#projects h2,
+#connect h2,
+#degrees h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #1a73e8;
+    letter-spacing: 1px;
+}
+
+/* Projects */
+.project {
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 1.8rem 2rem;
+    margin-bottom: 1.8rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 6px solid #1a73e8;
+    text-align: left;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(26, 115, 232, 0.3);
+}
+
+.project h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.project h3 a {
+    text-decoration: none;
+    color: #1a73e8;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.project h3 a:hover {
+    color: #0049b7;
+    text-decoration: underline;
+}
+
+.project p {
+    line-height: 1.55;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    color: #444;
+}
+
+.project p strong {
+    color: #555;
+}
+
+.project p a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.project p a:hover {
+    text-decoration: underline;
+}
+
+/* TA Duties Table */
+#ta-duty {
+    max-width: 1000px;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#ta-duty caption {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #1a73e8;
+}
+
+#ta-duty th,
+#ta-duty td {
+    padding: 1rem 1.2rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+#ta-duty thead {
+    background-color: #1a73e8;
+    color: white;
+}
+
+#ta-duty tbody tr:nth-child(even) {
+    background-color: #f6f9fc;
+}
+
+#ta-duty tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+#ta-duty tbody tr:hover {
+    background-color: #e3f2fd;
+}
+
+/* Connect Social Links */
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.social-links li a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #0073b1;
+    background-color: #f0f0f0;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.social-links li a:hover {
+    background-color: #0073b1;
+    color: #fff;
+}
+
+.social-links i {
+    font-size: 1.2rem;
+}
+
+/* Degree Cards */
+.degree-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.degree-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.2s ease;
+}
+
+.degree-card:hover {
+    transform: translateY(-5px);
+}
+
+.degree-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+        max-width: 90vw;
+    }
+
+    #bio {
+        margin: -3rem 1rem 2rem;
+        padding: 2rem 1.5rem 2.4rem;
+    }
+
+    #bio h2 {
+        font-size: 1.6rem;
+    }
+
+    #bio p {
+        font-size: 1rem;
+    }
+
+    #ta-duty th,
+    #ta-duty td {
+        padding: 0.75rem;
+        font-size: 0.95rem;
+    }
+
+    .project {
+        padding: 1.2rem 1rem;
+        border-left-width: 4px;
+    }
+}
+
+.publications {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.pub-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.pub-title {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.pub-venue {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0 10px;
+}
+
+.pub-description {
+    font-size: 14px;
+    color: #444;
+}
